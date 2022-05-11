@@ -61,13 +61,14 @@
         .project__item:hover &, .project__item:focus &{
             transform: translateY(0);
         }
-    &__text {
     
-        padding: 63px 24px;
-        font-size: 18px;
-        line-height: 1.55;
-        color: $whiteColor;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-    }
+        &__text {
+    
+            padding: 63px 24px;
+            font-size: 18px;
+            line-height: 1.55;
+            color: $whiteColor;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
 }
