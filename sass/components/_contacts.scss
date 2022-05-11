@@ -1,0 +1,45 @@
+.link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--main-color-);
+    fill: var(--main-color-);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.header-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+.link:hover,
+.link:focus {
+    color: var(--secondary-color-);
+    fill: var(--secondary-color-);
+}
+
+.hero-title {
+    font-weight: 900;
+    color: var(--white-color);
+    font-size: 44px;
+    line-height: 1.36;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.benefits-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--header-color-);
+
+    text-transform: uppercase;
+}

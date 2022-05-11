@@ -15,33 +15,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container header-inner">
-        <a class="logo" href="#">Web<span class="logo-header">Studio</span></a>
+     <header class="header ">
+      <div class="container header__inner">
+        <a class="logo linknon header__logo" href="#">Web<span class="logo--black">Studio</span></a>
         <nav class="nav">
-          <ul class="nav-list list-oll">
-            <li class="item"><a class="nav-link" href="./index.html">Студия</a></li>
-            <li class="item"><a class="nav-link active" href="./portfolio.html">Портфолио</a></li>
-            <li class="item"><a class="nav-link" href="#">Контакты</a></li>
+          <ul class="nav__list ">
+            <li class="nav__item"><a class="nav__link  linknon" href="./index.html">Студия</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--active linknon" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link linknon" href="#">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="header-list list-oll">
+        <ul class="header-list header__contacts">
           <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
+            <a class="link linknon" href="mailto:info@devstudio.com"
               ><svg class="item-mail">
-                <use href="/goit-markup-hw-04/images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
           </li>
           <li class="item">
-            <a class="link" href="tel:+380961111111"
-              ><svg class="item-tel">
-                <use href="/goit-markup-hw-04/images/symbol-defs.svg#icon-smartphone"></use>
+            <a class="link linknon" href="tel:+380961111111">
+              <svg class="item-tel"><use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -53,68 +51,51 @@
       <section class="section port">
         <h1 class="invis">Портфолио</h1>
         <div class="container">
-          <ul class="list-oll filters">
-            <li class="item"><button type="button">Все</button></li>
-            <li class="item"><button type="button">Веб-сайты</button></li>
-            <li class="item"><button type="button">Приложения</button></li>
-            <li class="item"><button type="button">Дизайн</button></li>
-            <li class="item"><button type="button">Маркетинг</button></li>
+          <ul class="filters">
+            <li class="filters__item"><button type="button" class="button">Все</button></li>
+            <li class="filters__item"><button type="button" class="button">Веб-сайты</button></li>
+            <li class="filters__item"><button type="button" class="button">Приложения</button></li>
+            <li class="filters__item"><button type="button" class="button">Дизайн</button></li>
+            <li class="filters__item"><button type="button" class="button">Маркетинг</button></li>
           </ul>
-          <ul class="list-oll project">
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port1.jpg" alt="Технокряк" width="370" />
-                <div class="back">
-                  <p class="back-text">
+          <ul class="project">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port1.jpg" alt="Технокряк" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="project-info">
-                <h2 class="port-title">Технокряк</h2>
-                <p class="port-name">Веб-сайт</p>
+              <div class="project__info">
+                <h2 class="project__title">Технокряк</h2>
+                <p class="project__name">Веб-сайт</p>
               </div>
             </li>
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port2.jpg" alt="Постер" width="370" />
-                <div class="back">
-                  <p class="back-text">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port2.jpg" alt="Постер" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="project-info">
-                <h2 class="port-title">Постер New Orlean vs Golden Star</h2>
-                <p class="port-name">Дизайн</p>
+              <div class="project__info">
+                <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                <p class="project__name">Дизайн</p>
               </div>
             </li>
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port3.jpg" alt="Ресторан" width="370" />
-                <div class="back">
-                  <p class="back-text">
-                    Pесурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
-                  </p>
-                </div>
-              </div>
-
-              <div class="project-info">
-                <h2 class="port-title">Ресторан Seafood</h2>
-                <p class="port-name">Приложение</p>
-              </div>
-            </li>
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port4.jpg" alt="Проект Prime" width="370" />
-                <div class="back">
-                  <p class="back-text">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port3.jpg" alt="Ресторан" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -122,16 +103,16 @@
                 </div>
               </div>
 
-              <div class="project-info">
-                <h2 class="port-title">Проект Prime</h2>
-                <p class="port-name">Маркетинг</p>
+              <div class="project__info">
+                <h2 class="project__title">Ресторан Seafood</h2>
+                <p class="project__name">Приложение</p>
               </div>
             </li>
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port5.jpg" alt="Проект Boxes" width="370" />
-                <div class="back">
-                  <p class="back-text">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port4.jpg" alt="Проект Prime" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -139,16 +120,16 @@
                 </div>
               </div>
 
-              <div class="project-info">
-                <h2 class="port-title">Проект Boxes</h2>
-                <p class="port-name">Приложение</p>
+              <div class="project__info">
+                <h2 class="project__title">Проект Prime</h2>
+                <p class="project__name">Маркетинг</p>
               </div>
             </li>
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port6.jpg" alt="Cайт" width="370" />
-                <div class="back">
-                  <p class="back-text">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port5.jpg" alt="Проект Boxes" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -156,21 +137,38 @@
                 </div>
               </div>
 
-              <div class="project-info">
-                <h2 class="port-title">Inspiration has no Borders</h2>
-                <p class="port-name">Веб-сайт</p>
+              <div class="project__info">
+                <h2 class="project__title">Проект Boxes</h2>
+                <p class="project__name">Приложение</p>
               </div>
             </li>
-            <li class="item">
-              <div class="project-thumb">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port6.jpg" alt="Cайт" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
+                    Pесурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__info">
+                <h2 class="project__title">Inspiration has no Borders</h2>
+                <p class="project__name">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__thumb">
                 <img
-                  class="port-img"
+                  class="project__img"
                   src="./images/port7.jpg"
                   alt="Издание Limited Edition"
                   width="370"
                 />
-                <div class="back">
-                  <p class="back-text">
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -178,16 +176,16 @@
                 </div>
               </div>
 
-              <div class="project-info">
-                <h2 class="port-title">Издание Limited Edition</h2>
-                <p class="port-name">Дизайн</p>
+              <div class="project__info">
+                <h2 class="project__title">Издание Limited Edition</h2>
+                <p class="project__name">Дизайн</p>
               </div>
             </li>
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port8.jpg" alt="Проект LAB" width="370" />
-                <div class="back">
-                  <p class="back-text">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port8.jpg" alt="Проект LAB" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -195,16 +193,16 @@
                 </div>
               </div>
 
-              <div class="project-info">
-                <h2 class="port-title">Проект LAB</h2>
-                <p class="port-name">Маркетинг</p>
+              <div class="project__info">
+                <h2 class="project__title">Проект LAB</h2>
+                <p class="project__name">Маркетинг</p>
               </div>
             </li>
-            <li class="item">
-              <div class="project-thumb">
-                <img class="port-img" src="./images/port9.jpg" alt="Growing Business" width="370" />
-                <div class="back">
-                  <p class="back-text">
+            <li class="project__item">
+              <div class="project__thumb">
+                <img class="project__img" src="./images/port9.jpg" alt="Growing Business" width="370" />
+                <div class="project__back">
+                  <p class="project__text">
                     Pесурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
@@ -212,61 +210,58 @@
                 </div>
               </div>
 
-              <div class="project-info">
-                <h2 class="port-title">Growing Business</h2>
-                <p class="port-name">Приложение</p>
+              <div class="project__info">
+                <h2 class="project__title">Growing Business</h2>
+                <p class="project__name">Приложение</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-contacts">
-          <div class="contacts">
-            <a class="logo" href="#">Web<span class="logo-footer">Studio</span></a>
-            <!-- <div class="footer-contacts"> -->
-            <!-- <div class="contacts"> -->
-            <address>г. Киев, пр-т Леси Украинки, 26</address>
-            <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <footer class="footer">
+      <div class="container footer__inner">
+          <div class="footer__contacts">
+            <a class="logo linknon footer__logo" href="#">Web<span class="logo--white">Studio</span></a>
+               <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+               <a class="footer__link linknon" href="mailto:info@devstudio.com">info@devstudio.com</a>
+               <a class="footer__link linknon" href="tel:+380961111111">+38 096 111 11 11</a>
           </div>
-          <div class="footer-social">
-            <h3 class="title">присоединяйтесь</h3>
-            <ul class="social-list list-oll">
-              <li class="item"><a class="social-icon" href=""
-                ><svg class="item-footer">
+          <div class="footer__">
+            <h3 class="footer__title title">присоединяйтесь</h3>
+            <ul class="footer__social ">
+              <li class="social__item"><a class="social__icon" href="">
+                <svg class="social__img social__img--white">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a></li>
-              <li class="item"><a class="social-icon" href=""
-                ><svg class="item-footer">
+              <li class="social__item"><a class="social__icon" href=""
+                ><svg class="social__img social__img--white">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a></li>
-              <li class="item"><a class="social-icon" href=""
-                ><svg class="item-footer">
+              <li class="social__item"><a class="social__icon" href=""
+                ><svg class="social__img social__img--white">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a></li>
-              <li class="item"><a class="social-icon" href=""
-                ><svg class="item-footer">
+              <li class="social__item"><a class="social__icon" href=""
+                ><svg class="social__img social__img--white">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a></li>
             </ul>
           </div>
-          <form  class="footer-form">
-            <h3 class="title">Подпишитесь на рассылку</h3>
-              <input type="email" class="footer-input" placeholder="E-mail" >
+          <form  class="footer__form">
+            <h3 class="footer__title title">Подпишитесь на рассылку</h3>
+              <input type="email" class="footer__input" placeholder="E-mail" >
             
-            <button type="submit" class="btn">Подписаться
-              <svg class="footer-img">
+            <button type="submit" class="button--blue button__footer button">Подписаться
+              <svg class="button__img">
               <use href="./images/symbol-defs.svg#icon-send" ></use>
               </svg></button>
           </form>
-        </div>
+        
       </div>
     </footer>
   </body>
